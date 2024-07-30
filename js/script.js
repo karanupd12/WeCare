@@ -9,3 +9,6 @@ document.querySelector('.pop-image span').onclick = () => {
     document.querySelector('.pop-image').style.display = 'none';
 }
 
+function volunteer(){
+    alert("Your Volunteering request has been received, fill the contact form to join our community - Team WeCare")
+}

@@ -158,8 +158,9 @@
         <div class="container">
             <div class="heading">
                 <h2>Our Missions</h2>
-                <p>We have delivered <span>Wastage</span> or <span>Donations</span> to needy Peoples</p>
+                <p>Guided by our commitment and <span>dedication</span>, our foundation works tirelessly to make a positive <span>difference</span> in the lives of those in need. Explore our gallery to see the impactful results of our efforts and the smiles we’ve brought to countless faces. Join us in continuing to spread hope and support through our ongoing mission.</p>
             </div>
+            <a href="#contact"><button type="submit" class="btn1" onclick="volunteer()">Volunteer Now</button></a>
             <div class="gallery-sec">
                 <div class="container">
                     <div class="image-container">
@@ -175,7 +176,7 @@
                     <span>&times;</span>
                     <img src="img/gallery/1.jpg" alt="gallery-img">
                 </div>
-                </di v>
+                </div>
             </div>
     </section>
 
@@ -200,7 +201,7 @@
         <section class="contact-section" id="contact">
             <div class="container">
                 <div class="heading">
-                    <h2>Connect With Us</h2>
+                    <h2>Connect With Us - Donate and Join the Community!!</h2>
                     <p>Fill this form, our team will collect your <span>Donation</span> or <span>Wastage</span> from your place.</p>
                 </div>
                 <div class="row">
@@ -272,7 +273,7 @@
         emailjs.sendForm('service_y75ssjr', 'template_5bx3cyf', this)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            alert('Your donation has been accepted and we will contact you shortly - team WeCare');
+            alert('Your donation request has been received, we will contact you shortly - team WeCare');
         }, function(error) {
             console.error('FAILED...', error);
             alert('There was an error processing your request. Please try again later.');

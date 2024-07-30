@@ -152,6 +152,7 @@ nav{
 .don-sec{
     background-color: #fff4f4;
     padding: 150px 0;
+    margin-bottom: 50px;
 }
 
 .don-sec .don-box{
@@ -190,6 +191,7 @@ nav{
 .gallery-sec{
 	position: relative;
 	padding: 50px 0;
+    clear: both;
 }
 
 .gallery-sec .image-container{
@@ -277,8 +279,6 @@ nav{
 }
 
 
-
-
 /* Footer */
 footer{
     background-color: #412525;
@@ -331,18 +331,3 @@ footer .social a img{
 ::-webkit-scrollbar-thumb{
     background: #8888bf;
 }
-
-
-
-#donation{
-    height: 50px;
-    width: 100%;
-    padding: 0px 5px;
-    border: none;
-    outline: none;
-    border: 1px solid rgb(206, 212, 218);
-    border-radius: 5px;
-    color: rgb(73, 80, 87);
-    font-weight: 400;
-}
-
