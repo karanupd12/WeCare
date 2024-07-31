@@ -16,7 +16,7 @@ body{
 .heading h2{
     font-size: 28px;
     font-weight: 500;
-    border-left: 8px solid #5b3b04;
+    border-left: 8px solid #95753f;
     padding: 5px 15px;
     margin-bottom: 15px;
 }
@@ -25,14 +25,14 @@ body{
 }
 .heading p span{
     font-weight: 600;
-    color: #754116;
+    color: #38002d;
 }
 
 /* Buttons */
 .btn1{
     font-size: 1rem;
     font-weight: 400;
-    background-color: #710806;
+    background-color: #bd0376;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -40,21 +40,21 @@ body{
     transition: all 0.5s;
 }
 .btn1:hover{
-    background-color: #d44f5a;
+    background-color: #b2259d;
     color: #ffffff;
 }
 
 /* Header */
 header{
-    background-color: #921d1d;
+    background-color: #310122;
     width: 100%;
-    
 }
+
 
 header .navbar-brand{
     font-size: 22px;
     font-weight: 600;
-    color: #9c4e0a;
+    color: #1d023b;
 }
 
 nav{
@@ -63,7 +63,8 @@ nav{
 
 .cont-sec{
     padding: 8px;
-    background-color: #fee8e8;
+    color: black;
+    background-color: #fbd9edd8;
     width: 100%;
 }
 
@@ -89,23 +90,26 @@ nav{
     margin-left: 15px;
 }
 
+/*Home*/
 .home-sec{
     /* height: 100vh; */
     padding: 100px 0;
+    background-color: #5b1164;
 }
 
 .home-sec .home-content {
     align-items: center;
+    color: white;
 }
 
 .home-sec .home-content h1{
     font-size: 2.3rem;
     font-weight: 600;
     margin-bottom: 20px;
-
 } 
+
 .home-sec .home-content h2 span{
-    color: #f10000;
+    color: #fe23bc;
 }
 
 .home-sec .home-content h2{
@@ -121,6 +125,7 @@ nav{
 .home-sec .img-sec{
     display: flex;
     justify-content: center;
+
 }
 
 .home-sec .img-sec img{
@@ -135,33 +140,34 @@ nav{
 /* About section */
 .about-sec{
     padding: 150px 0;
-    background-color: #fee8e8;
+    background-color: #fde9f5d8;
 }
 
 .about-sec img{
-    width: 350px;
-    border: 5px solid #5f5fa3;
-    border-radius: 5px;
+    width: 360px;
+    height: 400px;
+    border-radius: 25px;
 }
 
 .about-sec .about-txt p{
     font-size: 18px;
+    color: #320029;
 }
 
 /* Donation Section */
 .don-sec{
-    background-color: #fff4f4;
+    background-color: #eee0f4;
     padding: 150px 0;
     margin-bottom: 50px;
 }
 
 .don-sec .don-box{
     margin: 50px 0;
-    background-color: #fff;
+    background-color: #f3dded;
     padding: 50px;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 0 15px #f4b6b6;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #dc8ce7;
     transition: all 1s;
 }
 
@@ -185,6 +191,7 @@ nav{
 /* Missions */
 .mission{
     padding: 150px 0;
+    background-color: #f6eef8;
 }
 
 
@@ -257,6 +264,7 @@ nav{
 /* Contact Us */
 .contact-section {
     padding: 150px 0 80px;
+    background-color: #f1ecfc;
 }
 
 .contact-section .contact-form .form-group {
@@ -281,7 +289,7 @@ nav{
 
 /* Footer */
 footer{
-    background-color: #412525;
+    background-color: #310122;
     color: #e6edff;
     padding: 50px 0;
 }

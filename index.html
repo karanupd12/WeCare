@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="shortcut icon" href="img/don/salary.png" type="image/x-icon">
+    <link rel="shortcut icon" href="\img\icons\logo1.png" type="image/x-icon">
 </head>
 
 <body>
@@ -23,6 +23,7 @@
         <header>
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark">
+                    <img src="img/icons/logo1.png" alt="img" height="39px" width="40px" style="padding: 5px;">
                     <a class="navbar-brand" href="#home">WeCare Foundation</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -192,6 +193,7 @@
                     </div>
                     <p>At WeCare, our goal is to ensure everyone has access to essential items for a healthier, more fulfilling life. We focus on providing crucial resources such as clothing, food, and footwear to those in need. By identifying the most pressing needs in our community, we develop targeted programs to address them.</p>
                     <p>With the help of our donors and fundraising efforts, we make a significant impact on countless lives each year. From distributing warm clothing to providing nutritious meals, our mission is to create positive change and support those who need it most.</p>
+                    <p>At WeCare, we believe in the power of community and the difference we can make when we come together. Our dedicated team works tirelessly to organize donation drives, partner with local organizations, and engage with volunteers to maximize our reach and effectiveness. By fostering a network of compassion and support, we not only address immediate needs but also build a foundation for long-term resilience and well-being for those we serve.</p>
                 </div>
             </div>
         </div>
@@ -249,7 +251,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12 mt-3">
-                                            <button type="submit" class="btn btn-primary">Submit Details</button>
+                                            <button type="submit" class="btn1">Submit Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -260,26 +262,35 @@
             </div>
         </section>
         <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function(){
-        emailjs.init('8Ovn0TNldnkNgNIZv');
-    })();
-</script>
-<script type="text/javascript">
-    document.getElementById('donationForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        <script type="text/javascript">
+            (function(){
+                emailjs.init('8Ovn0TNldnkNgNIZv');
+            })();
+        </script>
+        <script type="text/javascript">
+            //Sending confirmation mail
+            document.getElementById('donationForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
 
-        // Send email using EmailJS
-        emailjs.sendForm('service_y75ssjr', 'template_5bx3cyf', this)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            alert('Your donation request has been received, we will contact you shortly - team WeCare');
-        }, function(error) {
-            console.error('FAILED...', error);
-            alert('There was an error processing your request. Please try again later.');
-        });
-    });
-</script>
+                // Sending Confirmation email
+                emailjs.sendForm('service_y75ssjr', 'template_5bx3cyf', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Your donation request has been received, we will contact you shortly - team WeCare');
+                }, function(error) {
+                    console.error('FAILED...', error);
+                    alert('There was an error processing your request. Please try again later.');
+                });
+
+                //Collecting details
+                emailjs.sendForm('service_y75ssjr', 'template_ppsq2jv', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    console.error('FAILED...', error);
+                });
+            });
+        </script>
 
     <footer>
         <div class="container">
@@ -315,6 +326,7 @@
                             <a href = 'karanupd12@gmail.com'><img src="img/icons/gmail.png" alt="gmail"></a>
                         </div>
                         <p>Copyright &copy; 2024 | All Right Reserved</p>
+                        <img src="img/icons/logo1.png" alt="img" height="75px" width="80px">
                     </div>
                 </div>
             </div>
